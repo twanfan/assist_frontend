@@ -40,18 +40,18 @@
           <span>{{ row.id }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="Project Name" min-width="150px">
+      <el-table-column label="Project Name" min-width="150px" align="center">
         <template slot-scope="{row}">
           <span>{{ row.name }}</span>
           <!-- <el-tag>{{ row.type | typeFilter }}</el-tag> -->
         </template>
       </el-table-column>
-      <el-table-column label="Create Time" width="150px" align="center">
+      <el-table-column label="Create Time" min-width="150px" align="center">
         <template slot-scope="{row}">
           <span>{{ row.create_time | parseTime('{y}-{m}-{d} {h}:{i}') }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="Update Time" width="150px" align="center">
+      <el-table-column label="Update Time" min-width="150px" align="center">
         <template slot-scope="{row}">
           <span>{{ row.update_time | parseTime('{y}-{m}-{d} {h}:{i}') }}</span>
         </template>
