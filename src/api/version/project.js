@@ -16,11 +16,11 @@ export function fetchProject(id) {
   })
 }
 
-export function fetchPv(pv) {
+export function deleteProject(data) {
   return request({
-    url: '/vue-element-admin/article/pv',
-    method: 'get',
-    params: { pv }
+    url: 'version/project/',
+    method: 'delete',
+    data
   })
 }
 
