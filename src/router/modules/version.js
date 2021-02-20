@@ -23,6 +23,12 @@ const versionRouter = {
       component: () => import('@/views/version/analysis-table'),
       name: 'AnalysisTable',
       meta: { title: 'Analysis Table' }
+    },
+    {
+      path: 'project-table',
+      component: () => import('@/views/version/project-table'),
+      name: 'ProjectTable',
+      meta: { title: 'Project Table' }
     }
   ]
 }
